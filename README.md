@@ -8,7 +8,9 @@ Uploading files to dropbox -
 <br>
  dbx = dropbox.Dropbox(<i>self.access_token</i>)
 <br>
-dbx.files_upload( <i>files_from</i>, <i>file_to</i> )
+f = open(file_from, 'rb')
+ <br>
+ dbx.files_upload(f.read(), file_to)
 
 <p>
 Self-access token generation -<br>
